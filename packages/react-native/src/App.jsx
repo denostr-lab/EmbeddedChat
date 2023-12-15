@@ -3,7 +3,7 @@ import Constants from "expo-constants";
 import { EmbeddedChat } from "./components";
 
 const props = {
-  host: 'http://192.168.1.11:3000',
+  host: 'http://localhost:3000',
   roomId: 'GENERAL',
   GOOGLE_CLIENT_ID: '',
   isClosable: true,
@@ -32,7 +32,7 @@ function App() {
 
 let AppEntryPoint = App;
 
-if (Constants.expoConfig.extra.storybookEnabled === "true") {
+if (Constants.expoConfig?.extra?.storybookEnabled === "true") {
   AppEntryPoint = require("../.storybook").default;
 }
 

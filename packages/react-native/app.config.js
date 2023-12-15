@@ -5,4 +5,7 @@ export default ({ config }) => ({
   extra: {
     storybookEnabled: process.env.STORYBOOK_ENABLED,
   },
+  web: {
+    bundler: "metro"
+  }
 });

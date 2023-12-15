@@ -112,7 +112,7 @@ const ChatRoomView = () => {
 			style={styles.container}>
 				<MessageList />
 				<ChatInput />
-				<MessageActionsSheet />
+				{/* <MessageActionsSheet /> */}
 		</KeyboardAvoidingView>
 	)
 }
